@@ -1,0 +1,40 @@
+@import "variaveis.less";
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(max-width: 768px) and (max-width: 1023px)";
+
+body {
+    background-color: #colors[backgroundColor]
+}
+
+header {
+    background-color: @corDoHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.menu li a {
+    color: @corMenu;
+    text-decoration: none;
+}
+
+.product-button {
+    background-color: @corBotao
+}
+
+.container {
+    max-width: 960px;
+    width: 80%;
+    margin: 0 auto;
+
+    @media @breakpointMobile{
+        max-width: 70%;
+    }
+
+    @media @breakpointTablet{
+        max-width: 80%
+    }
+
+}
